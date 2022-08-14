@@ -7,19 +7,18 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          German Piñeiro
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+        <ButtonComponent/>
+
       </header>
     </div>
   );
 }
 
+const ButtonComponent = ()=>{
+
+  return <button> hola Chicos y Chicas </button>
+}
 export default App;
