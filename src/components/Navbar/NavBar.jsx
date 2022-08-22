@@ -1,17 +1,8 @@
+import CartWidget from "./CartWidget"
+
 const Navbar = () => {
+
     return (
-
-        // <nav>
-
-        //     <button style={{ backgroundColor: "red"}}>Inicio</button>
-        //     <a href="#">Inicio</a>
-        //     <button style={{ backgroundColor: "blue"}}>Medio</button>
-        //     <a href="#">Medio</a>
-        //     <button style={{ backgroundColor: "green"}}>Fin</button>
-        //     <a href="#">Fin</a>
-
-        // </nav>
-
         <nav class="navbar navbar-expand-lg bg-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Navbar</a>
@@ -32,9 +23,13 @@ const Navbar = () => {
                         
                     </ul>
                 </div>
+                <div>
+                    <CartWidget/>
+                </div>
             </div>
         </nav>
     )
 }
 
 export default Navbar
+

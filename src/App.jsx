@@ -1,12 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from './components/Navbar/NavBar';
+import 'remixicon/fonts/remixicon.css';
+import ItemListContainer from './container/ItemListContainer/ItemListContainer';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
+      <ItemListContainer greeting="Estamos aprendiendo reac... " color="red"/>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
