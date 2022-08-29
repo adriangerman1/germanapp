@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/NavBar';
 import 'remixicon/fonts/remixicon.css';
 import ItemListContainer from './container/ItemListContainer/ItemListContainer';
+import ItemCount from './container/ItemListContainer/ItemCount';
 
 
 
@@ -13,6 +14,9 @@ function App() {
     <div className="App">
       <Navbar/>
       <ItemListContainer greeting="Estamos aprendiendo reac... " color="red"/>
+
+      <ItemCount />  
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
