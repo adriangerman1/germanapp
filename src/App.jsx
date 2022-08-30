@@ -15,7 +15,7 @@ function App() {
       <Navbar/>
       <ItemListContainer greeting="Estamos aprendiendo reac... " color="red"/>
 
-      <ItemCount />  
+      <ItemCount stock={5} initial={1}/>  
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
