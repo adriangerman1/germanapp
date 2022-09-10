@@ -1,9 +1,4 @@
-import { useState,useEffect } from "react"
-import { useParams } from "react-router-dom"
-import ItemDetail from "./ItemDetail"
-
-const listProducts=[
-    {
+[   {
         "id": "1",
         "image":"https://http2.mlstatic.com/D_NQ_NP_2X_988597-MLA50693346006_072022-F.webp",
         "title": "Motorola Edge 30 128 Gb Gris 8 Gb Ram",
@@ -32,34 +27,5 @@ const listProducts=[
         "camera":"Tiene 2 cámaras traseras de 13Mpx/2Mpx. Cámara delantera de 5Mpx.",
         "processor":"Procesador MediaTek Helio G25 Octa-Core de 2.3GHz con 2GB de RAM",
         "memory_limit":"Memoria interna de 32GB"
-    },
-]
-
-const getProducts = new Promise((resolve, reject) => {
-
-    setTimeout(() =>{
-        resolve(listProducts)
-    },2000)
-})
-
-const ItemDetailContainer = () =>{
-    let productId = useParams();
-    productId=productId.id-1
-    const [product, setproducts] = useState([])
-
-    useEffect(() => {
-        getProducts
-        .then((data) => {
-        setproducts(data[productId])
-        })
-    },[])
-
-    return(
-
-        <div className="container-fluid">
-            <ItemDetail product={product}/>
-        </div>
-    )
-}
-
-export default ItemDetailContainer
+    }
+] 

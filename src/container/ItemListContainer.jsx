@@ -1,6 +1,6 @@
 import { useState,useEffect } from "react";
+import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
-
 
 const listProducts=[
     {
@@ -42,8 +42,8 @@ const getProducts = new Promise((resolve, reject) => {
     },2000)
 })
 
-const ItemListContainer = ({greeting,color}) => {
 
+const ItemListContainer = () => {
     const [products, setproducts] = useState([])
 
     useEffect(() => {
@@ -54,10 +54,10 @@ const ItemListContainer = ({greeting,color}) => {
     },[])
 
     return(
-        <div>
+        <div className="container-fluid">
 
-            <p style={{color}}>{greeting}en coder </p>
             <ItemList products={products}/>
+            
 
         </div>
     )

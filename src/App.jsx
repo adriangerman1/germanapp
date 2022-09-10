@@ -8,39 +8,40 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ItemList from './container/ItemList';
 import Item from './container/Item';
 import ItemDetailContainer from './container/ItemDetailContainer';
+import CartWidget from './components/Navbar/CartWidget';
 
 function App() {
   return (
     <div className="App">
 
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<ItemListContainer/>} />
-          <Route path="/producto/:idproducto" element={<ItemList/>} />
-          <Route path="/categoria/:idproducto" element={<Item/>} />
-          {/* <Route path="/detalle/:idproducto" element={<Item/>} /> */}
-        {/* </Routes> */}
+          <Route path="/" element={<ItemListContainer/>}/>
+          <Route path="/CartWidget" element={<CartWidget/>}/>
+          <Route path="/category/:id" element={<ItemListContainer/>}/>
+          <Route path="/Item/:id" element={<ItemDetailContainer/>}/>
+        </Routes>
+      </BrowserRouter>  
 
-      {/* </BrowserRouter> */} 
-      <Navbar/>
-      <ItemCount stock={5} initial={1} />
+      {/* <Navbar/> */}
+      {/* <ItemCount stock={5} initial={1} /> */}
       
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           German Piñeiro
         </p>
 
-        {/* <ItemCount stock={5} initial={1} /> */}
-        {/* <ItemListContainer greeting="Estamos aprendiendo reac... " color="red" /> */}
-        {/* <ButtonComponent /> */}
+        <ItemCount stock={5} initial={1} />
+        <ItemListContainer greeting="Estamos aprendiendo reac... " color="red" />
+        <ButtonComponent />
 
         <ItemDetailContainer/>
 
         
 
-      </header>
+      </header> */}
     </div>
   );
 }
