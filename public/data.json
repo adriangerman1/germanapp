@@ -7,6 +7,7 @@
         "camera":"Tiene 3 cámaras traseras de 50Mpx/50Mpx/2Mpx. Cámara delantera de 32Mpx",
         "processor":"Procesador Snapdragon 778G+ 5G Octa-Core de 2.5GHz con 8GB de RAM",
         "memory_limit":"Memoria interna de 128GB"
+    
     },
     {
         "id": "2",
@@ -17,6 +18,7 @@
         "camera":"Tiene 4 cámaras traseras de 64Mpx/8Mpx/5Mpx/5Mpx. Cámara delantera de 20Mpx",
         "processor":"Procesador MediaTek Helio G80 Octa-Core de 2GHz con 4GB de RAM",
         "memory_limit":"Memoria interna de 128GB"
+        
     },
     {
         "id": "3",
@@ -27,5 +29,6 @@
         "camera":"Tiene 2 cámaras traseras de 13Mpx/2Mpx. Cámara delantera de 5Mpx.",
         "processor":"Procesador MediaTek Helio G25 Octa-Core de 2.3GHz con 2GB de RAM",
         "memory_limit":"Memoria interna de 32GB"
+
     }
 ] 

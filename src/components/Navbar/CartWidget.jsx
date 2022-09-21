@@ -1,12 +1,18 @@
-import { Link } from "react-router-dom";
+import React, { useContext } from "react";
+import CardItem from "./CardItem";
+import {Context} from "../../context/CardContext"
 
 const CartWidget = () => {
 
+    const { card, clear } = useContext(Context)
+
+
     return (
-        <Link to="/CartWidget" >
-            <button type="button" className="btn btn-success position-relative"><i className="ri-shopping-cart-line"/><span className="position-absolute top-0 start-100 translate-middle badge text-bg-success">0<span className="visually-hidden">unread messages</span></span></button>
-        </Link>
-        ) 
+        <>
+            {card.map(element =><CardItem item={element}/>)}
+            <button className="btn btn-danger" onClick={clear}>Borrar Carrito</button>
+        </>
+    )
 }
 
 export default CartWidget;
