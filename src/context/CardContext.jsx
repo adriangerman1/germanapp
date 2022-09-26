@@ -6,6 +6,14 @@ const CardContext = ({children}) =>{
 
     const [card, setCard] = useState([])
 
+    const Total = () => {
+        let total = 0
+        card.forEach((prod) => {
+            total = total + prod.price * prod.quantity
+        } )
+        return total
+    }
+
     const clear =() =>{
         setCard([])
     }
@@ -34,7 +42,7 @@ const CardContext = ({children}) =>{
     }
 
     return(
-        <Context.Provider value={{addItem,card,removeItem,clear}}>
+        <Context.Provider value={{addItem,card,removeItem,clear, Total}}>
             {children} 
         </Context.Provider>
     )
