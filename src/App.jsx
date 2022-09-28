@@ -8,6 +8,7 @@ import CartWidget from './components/Navbar/CartWidget';
 import ItemCardContainer from './container/ItemCardContainer';
 import CartContext from './context/CardContext';
 import CardItem from './components/Navbar/CardItem';
+import ItemById from './container/ItemById';
 
 function App() {
 
@@ -27,6 +28,8 @@ function App() {
           </Routes>
           </CartContext>
         </BrowserRouter> 
+
+        {/* <ItemById/> */}
 
       </div>
   )

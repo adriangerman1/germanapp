@@ -23,10 +23,11 @@ const ItemDetail = ({ product }) => {
                 <div className="boxInfo card-body col-md-6">
                     <h3 className="card-title">{product.title}.</h3>
                     <h5>Precio: ${product.price}.</h5>
-                    <h5>{product.screen}.</h5>
-                    <h5>{product.camera}.</h5>
-                    <h5>{product.processor}.</h5>
-                    <h5>{product.memory_limit}.</h5> 
+                    <h5>Pantalla: {product.screen}.</h5>
+                    <h5>Camaras: {product.camera}.</h5>
+                    <h5>Procesador: {product.processor}.</h5>
+                    <h5>Memoria: {product.memory_limit}GB.</h5> 
+                    <h5>Memoria ram: {product.ram}GB.</h5> 
                     <h4><ItemCount stock={10} initial={0} onAdd={onAdd}/></h4>  
                     {/* <Link to={'/Cart'}>
                         <button className="btn btn-primary m-2">comprar producto</button>
