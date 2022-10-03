@@ -1,5 +1,6 @@
 import { useState, } from "react"
 
+
 // const ItemCount = ({ stock, initial }) => {
 const ItemCount = ({ stock, initial, onAdd }) => {
 
@@ -26,7 +27,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                     <button className="btn btn-outline-danger" onClick={restNumber}> - </button>
                 </div>
             </div>
-            <button className="btn btn-primary m-2" onClick={() => onAdd(count)}>comprar producto</button>
+            <button className="btn btn-primary m-2" onClick={() => onAdd(count)}>Agregar producto</button>
         </div>       
     )   
 }

@@ -12,7 +12,7 @@ const CardItem=({item}) => {
     return (
         <>  
             <h4 key={item.id}>Producto: {item.title} - Cantidad: {item.quantity} - Precio: ${item.price} </h4>
-            <button className="btn btn-primary" onClick={borrar}>Borrar</button>
+            <button className="btn btn-primary m-2" onClick={borrar}>Borrar</button>
         </> 
     )
 }
